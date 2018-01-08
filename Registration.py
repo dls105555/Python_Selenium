@@ -20,7 +20,6 @@ select = Select(driver.find_element_by_name("zone_code"))
 # select.select_by_visible_text("text")
 select.select_by_visible_text("Illinois")
 
-
 checked = driver.find_element_by_name("newsletter").is_selected()
 if checked == False:
     driver.find_element_by_name("newsletter").click()
